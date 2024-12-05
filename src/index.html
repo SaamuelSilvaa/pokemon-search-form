@@ -6,21 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Pokemon</title>
     <link rel="stylesheet" href="/src/styles/reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1>Search Pokemon</h1>
-    <form id="pokemon-form">
+<body class="">
 
-        <label for="">Pokemon Name:</label>
-        <input type="text" id="pokemon-name" placeholder="write the name of the pokemon" required>
-        <button type="submit">Search</button>
-        
-    </form>
+    <div class="bg-red-600 h-72 pt-6 border-gray-950 border-y-4">
+        <div class=" flex flex-col items-center justify-center gap-5">
 
-<div id="pokemon-info"></div>
-<script src="/src/scripts/search-form.js"></script>
+            <h1 class="text-center text-xl border rounded p-1 bg-white w-40">Search Pokemon</h1>
+            <form class="flex flex-col gap-10 text-lg" id="pokemon-form">
 
+                <div class="flex flex-col gap-2">
+                    <label class="text-center text-2xl text-white" for="">Pokemon
+                        Name:</label>
+                    <input class="text-center w-96 border rounded-lg text-2xl border-gray-950 text-gray-950 p-1" type="text"
+                        id="pokemon-name" placeholder="write the name of the pokemon" required>
+                </div>
+
+                <button class="flex gap-5 text-white justify-around" type="submit"><img class="w-10 h-10" src="/src/assets/images/pokebola.png" alt=""></button>
+
+
+
+            </form>
+
+
+
+
+        </div>
+    </div>
+    <div class="bg-white h-60 flex items-center justify-center pt-10">
+        <div class="" id="pokemon-info"></div>
+        <script class="" src="/src/scripts/search-form.js"></script>
+    </div>
 
 
 
