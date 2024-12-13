@@ -4,43 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Pokemon</title>
-    <link rel="stylesheet" href="/src/styles/reset.css">
+    <title class="">Search Pokemon</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="">
 
-    <div class="bg-red-600 h-72 pt-6 border-gray-950 border-y-4">
+    <div class="bg-red-600 h-72 pt-6 border-gray-950 border-y-8">
         <div class=" flex flex-col items-center justify-center gap-5">
 
-            <h1 class="text-center text-xl border rounded p-1 bg-white w-40">Search Pokemon</h1>
+
             <form class="flex flex-col gap-10 text-lg" id="pokemon-form">
 
-                <div class="flex flex-col gap-2">
-                    <label class="text-center text-2xl text-white" for="">Pokemon
-                        Name:</label>
-                    <input class="text-center w-96 border rounded-lg text-2xl border-gray-950 text-gray-950 p-1" type="text"
-                        id="pokemon-name" placeholder="write the name of the pokemon" required>
+
+                <div class="flex items-center justify-center">
+
+                    <img class=" flex items-center justify-center h-30" src="/src/assets/images/International_Pokémon_logo.svg.png" alt="">
+
+
                 </div>
-
-                <button class="flex gap-5 text-white justify-around" type="submit"><img class="w-10 h-10" src="/src/assets/images/pokebola.png" alt=""></button>
-
-
-
+                <div class="flex w-96 h-10 gap-2">
+                    <input class="text-center w-96 border h-10 text-2xl border-gray-950 text-gray-950 p-1" type="text"
+                        id="pokemon-name" placeholder="Digite o nome do pokemon..." required>
+                    
+                </div>
             </form>
 
+
+
+            <button class="flex  items-center justify-center pt-3">
+                <img class="flex items-center justify-center h-20 " src="/src/assets/images/Poké_Ball_icon.svg" alt="">
+
+            </button>
 
 
 
         </div>
     </div>
-    <div class="bg-white h-60 flex items-center justify-center pt-10">
-        <div class="" id="pokemon-info"></div>
+
+    <div class=" h-60 flex items-center justify-center pt-10">
+        <div class="flex w-52 h-56 items-center justify-center pt-6" id="pokemon-info"></div>
         <script class="" src="/src/scripts/search-form.js"></script>
     </div>
-
-
 
 
 </body>

@@ -21,9 +21,9 @@ async function getPokemon(event) {
 <div class"card"> 
     <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}"> 
     <h2>${pokemon.name}</h2>
-    <p><strong>Height:</strong>${pokemon.height / 10}m</p>
-    <p><strong>Weight:</strong>${pokemon.weight / 10}kg</p>
-    <p><strong>Types:</strong>${pokemon.types.map(type => type.type.name).join(', ')}</p>
+    <p><strong>Height: </strong>${pokemon.height / 10}m</p>
+    <p><strong>Weight: </strong>${pokemon.weight / 10}kg</p>
+    <p><strong>Types: </strong>${pokemon.types.map(type => type.type.name).join(', ')}</p>
      
 
     </div>

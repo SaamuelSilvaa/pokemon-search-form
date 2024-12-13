@@ -1,0 +1,23 @@
+
+
+
+#pokemon-info {
+    border-style: solid 1px;
+    border-color: black
+}
+
+#pokemon-info img {
+
+    width: 200px;
+    height: 200px;
+}
+
+#pokemon-info p {
+
+
+    text-decoration-color: black;
+    align-items: center;
+    justify-items: center;
+    font-size:large
+}
+
